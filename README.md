@@ -4,7 +4,6 @@
 - Punten waar op te letten:<br />
 | Nieuw level is altijd een nieuwe map.<br />
 | Assets kunnen van internet gepakt worden of zelf gemaakt worden.<br />
-| Perlin Noise<br />
 | Polished Art & Gameplay look<br />
 | Het hoeft niet 2D te zijn het kan ook 3D<br />
 | Button waarmee je naar een nieuw kamer kunt / Speler die spel beweegt naar einde en nieuw level inkomt.<br />
