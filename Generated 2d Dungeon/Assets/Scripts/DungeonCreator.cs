@@ -9,14 +9,21 @@ public class DungeonCreator : MonoBehaviour
     private float tileSize = 4;
     private float pointX;
     private float pointY;
+    private float rWidth = 10;
+    private float rHeight = 10;
+    private float rooms = 5;
     
     void Start()
     {
         GetRandomPointInCircle(radius, out pointX, out pointY);
-        roundm( out pointX, pointX, tileSize);
-        roundm( out pointY, pointY, tileSize);
-        Debug.Log(pointX);
-        Debug.Log(pointY);
+        Roundm( out pointX, pointX, tileSize);
+        Roundm( out pointY, pointY, tileSize);
+
+        for (var i = 0; i <= rooms; i++)
+        {
+            CreateRoom(pointX, pointY);
+        }
+        
     }
 
     void GetRandomPointInCircle(float radius, out float pointX, out float pointY)
@@ -39,9 +46,14 @@ public class DungeonCreator : MonoBehaviour
 
     }
     
-    void roundm( out float outPoint, float n,float m)
+    void Roundm( out float outPoint, float n,float m)
     {
         outPoint = Mathf.Floor(((n + m - 1) / m)) * m;
+    }
+
+    void CreateRoom(float pointX, float pointY)
+    {
+
     }
 }
 
